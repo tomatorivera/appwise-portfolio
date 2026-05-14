@@ -1,1 +1,7 @@
 @import url(styles.css);
+
+body {
+  background-color: var(--oscuro-1);
+  color: var(--claro-1);
+  height: 100vh;
+}
