@@ -2,21 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-  --oscuro-1: #191513;
-  --oscuro-2: #443F3B;
-  --oscuro-3: #A8A29E;
-  --claro-1: #FFFFFF;
-  --claro-2: #E2E8F0;
-  --naranja-1: #F97316;
-  --naranja-2: #FFB781;
+  --oscuro-1: #13100e;   /* rgba(25, 21, 19, 1) */
+  --oscuro-2: #22201e;   /* rgba(25, 21, 19, 1) */
+  --oscuro-3: #443F3B;   /* rgba(68, 63, 59, 1) */
+  --oscuro-4: #A8A29E;   /* rgba(168, 162, 158, 1) */
+  --claro-1: #FFFFFF;    /* rgba(255, 255, 255, 1) */
+  --naranja-1: #f86c07;  /* rgba(25, 21, 19, 1) */
 }
 
 /** General **/
 * {
   border: 0;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -28,6 +32,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /** Fuentes **/

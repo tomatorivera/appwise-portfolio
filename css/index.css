@@ -1,7 +1,19 @@
 @import url(styles.css);
+@import url(navbar.css);
 
 body {
   background-color: var(--oscuro-1);
   color: var(--claro-1);
-  height: 100vh;
+
+  /* temp */
+  overflow-x: hidden;
+}
+
+.layout {
+  min-width: 100vw;
+  display: flex;
+}
+
+.content {
+  flex: 1;
 }

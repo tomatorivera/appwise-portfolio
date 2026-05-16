@@ -12,129 +12,144 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
-  <nav class="navbar">
-    <section class="navbar-head">
-      <i data-feather="briefcase"></i>
-      <h2>Portfolio</h2>
-
-      <button id="open-navbar" class="navbar-openbtn">
-        <i data-feather="chevron-left"></i>
-      </button>
-    </section>
-
-    <section>
-      <ul class="navbar-links">
-        <li class="navbar-link navbar-link--active">
-          <a href="#">Sobre mí</a>
-        </li>
-        <li class="navbar-link dropdown">
-          <button class="open-dropdown">
-            Páginas web
-          </button>
-          <ul class="dropdown-menu" id="web-projects">
-            <li><a href="#" class="dropdown-item"></a></li>
-          </ul>
-        </li>
-        <li class="navbar-link dropdown">
-          <button class="open-dropdown">
-            Videojuegos
-          </button>
-          <ul class="dropdown-menu" id="game-projects">
-            <li><a href="#" class="dropdown-item"></a></li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-  </nav>
-
-  <section class="content">
-    <div class="content-data">
-      <header class="introduction">
-        <div class="introduction-data">
-          <p>Disponible para trabajar</p>
-      
-          <div class="introduction-data-name">
-            <h1 class="yeseva-one fs-italic">Tomas Octtaviano</h1>
-            <p class="fw-light fs-italic">Más conocido como <span class="yeseva-one fs-italic">El Rami</span></p>
+  <div class="layout">
+    <nav class="navbar">
+      <section class="navbar-head">
+        <i data-feather="briefcase"></i>
+        <h2>Portfolio</h2>
+    
+        <button id="toggle-navbar" class="navbar-openbtn">
+          <i data-feather="chevron-left"></i>
+        </button>
+      </section>
+    
+      <section class="navbar-links">
+        <ul>
+          <li>
+            <a href="#" class="navbar-link navbar-link--active">
+              <i data-feather="user"></i>
+              Sobre mí
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-link open-dropdown">
+              <i data-feather="layout"></i>
+              Páginas web
+            </a>
+            <ul class="dropdown-menu" id="web-projects">
+              <li><a href="#" class="dropdown-item">Test 1</a></li>
+              <li><a href="#" class="dropdown-item">Test 2</a></li>
+              <li><a href="#" class="dropdown-item">Test 3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-link open-dropdown">
+              <i data-feather="crosshair"></i>
+              Videojuegos
+            </a>
+            <ul class="dropdown-menu" id="game-projects">
+              <li><a href="#" class="dropdown-item">Test 1</a></li>
+              <li><a href="#" class="dropdown-item">Test 2</a></li>
+              <li><a href="#" class="dropdown-item">Test 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    
+    <section class="content">
+      <div class="content-data">
+        <header class="introduction">
+          <div class="introduction-data">
+            <p>Disponible para trabajar</p>
+    
+            <div class="introduction-data-name">
+              <h1 class="yeseva-one fs-italic">Tomas Octtaviano</h1>
+              <p class="fw-light fs-italic">Más conocido como <span class="yeseva-one fs-italic">El Rami</span></p>
+            </div>
+    
+            <p>Soy un desarrollador de software y estudiante de informática casi recibido. Aprendo todo lo que puedo, porque
+              me encanta la tecnología y sus capacidades. Sí, prefiero el backend, por si este frontend no se ve demasiado
+              lindo. Actividades principales: programar, hobbies: programar, me quiero dedicar a: programar.</p>
           </div>
-      
-          <p>Soy un desarrollador de software y estudiante de informática casi recibido. Aprendo todo lo que puedo, porque me encanta la tecnología y sus capacidades. Sí, prefiero el backend, por si este frontend no se ve demasiado lindo. Actividades principales: programar, hobbies: programar, me quiero dedicar a: programar.</p>
+        </header>
+    
+        <div class="search-projects">
+          <input type="text" id="projects" placeholder="Busquemos algún proyecto por nombre o tecnología..." />
+          <i data-feather="search"></i>
         </div>
-      </header>
-
-      <div class="search-projects">
-        <input 
-          type="text"
-          id="projects"
-          placeholder="Busquemos algún proyecto por nombre o tecnología..."
-        />
-        <i data-feather="search"></i>
+    
+        <main class="about">
+          <div class="experience">
+            <h2 class="yeseva-one">Experiencia</h2>
+            <ul class="experience-items" id="experience">
+              <li class="experience-item">
+                <div class="experience-item-title">
+                  <h3 class="yeseva-one">Teaching Assistant (TA)</h3>
+                  <p>2024 - Actualidad</p>
+                </div>
+                <p>Docencia universitaria en materias relacionadas con back-end y front-end</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-item-title">
+                  <h3 class="yeseva-one">Desarrollador freelance</h3>
+                  <p>2022 - Actualidad</p>
+                </div>
+                <p>Diseño y desarrollo a medida de aplicaciones de software web y de escritorio</p>
+              </li>
+            </ul>
+            <p>Si te interesa ver un poco más de mi experiencia, hacé <a href="#">click acá</a></p>
+          </div>
+          <div class="info">
+            <div class="info-group skills" id="skills">
+              <h2 class="yeseva-one">Habilidades</h2>
+              <div>
+                <h3>Backend</h3>
+                <div class="skills-group">
+                  <span class="info-badge">Java</span>
+                  <span class="info-badge">.NET</span>
+                </div>
+              </div>
+              <div>
+                <h3>Frontend</h3>
+                <div class="skills-group">
+                  <span class="info-badge">Java</span>
+                  <span class="info-badge">.NET</span>
+                </div>
+              </div>
+            </div>
+            <div class="info-group languages" id="languages">
+              <h2 class="yeseva-one">Lenguajes</h2>
+              <div>
+                <span class="info-badge">Inglés - B1</span>
+                <span class="info-badge">Español - nativo</span>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
-      
-      <main class="about">
-        <div class="experience">
-          <h2 class="yeseva-one">Experiencia</h2>
-          <ul class="experience-items" id="experience">
-            <li class="experience-item">
-              <div class="experience-item-title">
-                <h3 class="yeseva-one">Teaching Assistant (TA)</h3>
-                <p>2024 - Actualidad</p>
-              </div>
-              <p>Docencia universitaria en materias relacionadas con back-end y front-end</p>
-            </li>
-            <li class="experience-item">
-              <div class="experience-item-title">
-                <h3 class="yeseva-one">Desarrollador freelance</h3>
-                <p>2022 - Actualidad</p>
-              </div>
-              <p>Diseño y desarrollo a medida de aplicaciones de software web y de escritorio</p>
-            </li>
-          </ul>
-          <p>Si te interesa ver un poco más de mi experiencia, hacé <a href="#">click acá</a></p>
+      <div class="content-hero">
+        <figure class="hero-img">
+          <img src="assets/me-in-gibhli.png" alt="Foto de Tomas Octtaviano en estilo ghibli" />
+          <figcaption class="fw-light fs-italic">(En estilo ghibli porque no tengo fotos formales)</figcaption>
+        </figure>
+    
+        <p>Conocé mis otras plataformas</p>
+        <div class="hero-socials">
+          <a href="#"><i data-feather="github"></i></a>
+          <a href="#"><i data-feather="linkedin"></i></a>
         </div>
-        <div class="info">
-          <div class="info-group skills" id="skills">
-            <h2 class="yeseva-one">Habilidades</h2>
-            <div>
-              <h3>Backend</h3>
-              <div class="skills-group">
-                <span class="info-badge">Java</span>
-                <span class="info-badge">.NET</span>
-              </div>
-            </div>
-            <div>
-              <h3>Frontend</h3>
-              <div class="skills-group">
-                <span class="info-badge">Java</span>
-                <span class="info-badge">.NET</span>
-              </div>
-            </div>
-          </div>
-          <div class="info-group languages" id="languages">
-            <h2 class="yeseva-one">Lenguajes</h2>
-            <div>
-              <span class="info-badge">Inglés - B1</span>
-              <span class="info-badge">Español - nativo</span>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
-    <div class="content-hero">
-      <figure class="hero-img">
-        <img src="assets/me-in-gibhli.png" alt="Foto de Tomas Octtaviano en estilo ghibli" />
-        <figcaption class="fw-light fs-italic">(En estilo ghibli porque no tengo fotos formales)</figcaption>
-      </figure>
-
-      <p>Conocé mis otras plataformas</p>
-      <div class="hero-socials">
-        <a href="#"><i data-feather="github"></i></a>
-        <a href="#"><i data-feather="linkedin"></i></a>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   
+  <!-- Iconos -->
   <script>feather.replace()</script>
+
+  <!-- Script principal -->
   <script src="js/app.js"></script>
+
+  <!-- Componentes -->
+   <script src="js/navbar.js"></script>
 </body>
 </html>
