@@ -94,3 +94,69 @@ body {
 .fw-light {
   font-weight: 300;
 }
+
+/** Utilidades **/
+
+.badge {
+  background-color: rgba(25, 21, 19, 1);
+  border: 1px solid var(--oscuro-3);
+  border-radius: 15px;
+  padding: .2em .8em;
+}
+
+.badge strong {
+  color: var(--claro-1);
+  font-weight: 400;
+}
+
+.badge--naranja {
+  background-color: rgba(139, 60, 2, .3);
+  border: 1px solid var(--naranja-1);
+  border-radius: 15px;
+  color: var(--naranja-1);
+  text-shadow: 0 0 10px rgba(255, 167, 52, .4);
+}
+
+.badge--conpunto {
+  position: relative;
+
+  /* before width + padding between before and text */
+  padding-left: calc(15px + 1em);
+  /* pairing left and right padding */
+  padding-right: .5em;
+}
+
+.badge--conpunto::before {
+  content: "";
+  background: linear-gradient(
+    to right top,
+    var(--naranja-3) 0%,
+    var(--naranja-1) 90%
+  );
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: parpadear 2s ease-in-out infinite;
+}
+
+@keyframes parpadear {
+  0% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 167, 52, .4);
+  }
+  50% {
+    opacity: .6;
+    transform: translateY(-50%) scale(.9);
+    box-shadow: 0 0 10px 3px rgba(255, 167, 52, .2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 167, 52, .4);
+  }
+}
