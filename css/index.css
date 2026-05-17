@@ -4,12 +4,13 @@
 body {
   background-color: var(--oscuro-1);
   color: var(--claro-1);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .layout {
-  min-width: 100vw;
   display: flex;
+  min-width: 100vw;
+  position: relative;
 }
 
 /** CONTENIDO PRINCIPAL **/
@@ -191,6 +192,10 @@ body {
 }
 
 @media all and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .layout {
     flex-direction: column;
   }

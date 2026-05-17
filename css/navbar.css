@@ -11,12 +11,9 @@
   flex-shrink: 0;
   gap: 1em;
 
-  height: 100dvh;
   width: 200px;
   padding: 1em;
-
-  position: sticky;
-  top: 0;
+  
   transition: width .5s ease;
 }
 
