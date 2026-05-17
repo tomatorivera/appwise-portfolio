@@ -225,6 +225,38 @@ body {
   color: var(--oscuro-4);
 }
 
+/** SECCIÓN DE HABILIDADES **/
+
+.skills-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  gap: .4em;
+  margin-bottom: .8em;
+}
+
+.skills-item h3 {
+  color: var(--claro-1);
+  font-style: italic;
+}
+
+.skills-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
+}
+
+.skill {
+  background-color: rgba(25, 21, 19, 1);
+  border: 1px solid var(--oscuro-3);
+  border-radius: 15px;
+  padding: .2em .8em;
+}
+
 /** HERO **/
 
 .content-hero {
