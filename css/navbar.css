@@ -18,7 +18,8 @@
 }
 
 .navbar.hide {
-  width: 50px;
+  width: 15px;
+  padding: 1em 0;
 }
 
 .navbar-head h2,
@@ -61,7 +62,7 @@
   background: var(--oscuro-2);
   border-radius: 50%;
   cursor: pointer;
-  padding: .3em;
+  padding: .5em;
 
   position: absolute;
   right: 0;
@@ -72,6 +73,10 @@
 .navbar-openbtn > svg {
   color: var(--naranja-1);
   stroke-width: 3;
+}
+
+.navbar.hide .navbar-openbtn {
+  right: 12px;
 }
 
 .navbar-link {
