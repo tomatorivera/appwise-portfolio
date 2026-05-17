@@ -185,6 +185,18 @@ body {
   padding-top: .8em;
 }
 
+.badge {
+  background-color: rgba(25, 21, 19, 1);
+  border: 1px solid var(--oscuro-3);
+  border-radius: 15px;
+  padding: .2em .8em;
+}
+
+.badge strong {
+  color: var(--claro-1);
+  font-weight: 400;
+}
+
 /** SECCIÓN DE EXPERIENCIA **/
 
 .experience-item {
@@ -250,11 +262,12 @@ body {
   gap: .4em;
 }
 
-.skill {
-  background-color: rgba(25, 21, 19, 1);
-  border: 1px solid var(--oscuro-3);
-  border-radius: 15px;
-  padding: .2em .8em;
+/** SECCIÓN DE LENGUAJES **/
+
+.languages-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4em;
 }
 
 /** HERO **/
