@@ -184,7 +184,7 @@
 
 /** RESPONSIVE **/
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
   .navbar {
     border-radius: 0;
     flex-direction: row;
@@ -230,6 +230,13 @@
 
   .navbar-link {
     padding-right: .5em;
+  }
+
+  .navbar-head {
+    padding-left: 1.2em;
+  }
+  .navbar-link {
+    padding-right: 1.2em;
   }
 
   .open-dropdown {

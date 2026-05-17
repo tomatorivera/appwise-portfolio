@@ -16,15 +16,12 @@ body {
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 1.5em;
 
   flex: 1;
   padding: 1.2em 1.5em;
-}
-
-.content img {
-  /* temp */
-  width: 100%;
 }
 
 /** SECCIÓN DE INTRODUCCIÓN */
@@ -90,7 +87,9 @@ body {
 .introduction-data-name > h1 {
   color: var(--naranja-1);
   font-size: 3em;
+  line-height: .9;
   margin-left: -0.15em;
+  margin-bottom: .15em;
   text-shadow: 0 0 8px rgba(255, 167, 52, .4);
 }
 
@@ -103,7 +102,95 @@ body {
   color: var(--oscuro-4);
 }
 
-@media all and (min-width: 1200px) {
+/** HERO */
+
+.content-hero {
+  background-color: var(--claro-1);
+  border-radius: 15px;
+  color: var(--oscuro-3);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  width: 100%;
+}
+
+.content-hero figure {
+  text-align: center;
+  width: 100%;
+}
+
+.content-hero figure img {
+  border: 2px solid var(--oscuro-3);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.content-hero section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.content-hero section h2 {
+  border-bottom: 1px solid var(--oscuro-1);
+  color: var(--oscuro-1);
+  font-size: 2em;
+  font-weight: 800;
+  line-height: .85;
+  width: 100%;
+}
+
+.content-hero section p {
+  font-size: .9em;
+  margin: .8em 0;
+}
+
+.content-hero-description {
+  font-weight: 500;
+}
+
+.content-hero-socials {
+  display: flex;
+  gap: 1em;
+}
+
+.content-hero-socials svg {
+  color: var(--naranja-1);
+}
+
+
+/** RESPONSIVE **/
+
+@media all and (min-width: 576px) {
+  .content-hero {
+    flex-direction: row;
+    height: 230px;
+  }
+
+  .content-hero section {
+    font-size: .9rem;
+  }
+
+  .content-hero figure {
+    width: auto;
+    height: 100%;
+  }
+  .content-hero figure img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .content-hero section {
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
   .layout {
     flex-direction: column;
   }
@@ -114,14 +201,38 @@ body {
     flex-direction: row;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 2em 0;
+    padding: 2em;
   }
 
   .content-data {
     flex: 1;
   }
 
+  /** HERO */
+
   .content-hero {
-    width: 350px;
+    flex-direction: column;
+    width: 350px; 
+    height: auto;
+    text-align: center;
   }
+
+  .content-hero section {
+    font-size: 1rem;
+  }
+
+  .content-hero figure {
+    height: auto;
+    width: 100%;
+  }
+  .content-hero figure img {
+    height: auto;
+    width: 100%;
+  }
+
+  .content-hero-socials {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
 }
