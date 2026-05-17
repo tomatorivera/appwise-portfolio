@@ -10,7 +10,6 @@ body {
 .layout {
   display: flex;
   min-width: 100vw;
-  position: relative;
 }
 
 /** CONTENIDO PRINCIPAL **/
@@ -25,7 +24,7 @@ body {
   padding: 1.2em 1.5em;
 }
 
-/** SECCIÓN DE INTRODUCCIÓN */
+/** SECCIÓN DE INTRODUCCIÓN **/
 
 .introduction-data {
   display: flex;
@@ -103,7 +102,53 @@ body {
   color: var(--oscuro-4);
 }
 
-/** HERO */
+/** SECCIÓN DE BÚSQUEDA **/
+
+.search-projects {
+  background-color: rgba(168, 162, 158, .15);
+  border: 1px solid rgba(168, 162, 158, .6);
+  border-radius: 25px;
+  color: var(--oscuro-4);
+
+  display: flex;
+  align-items: center;
+
+  margin: 1.5em 0;
+  overflow: hidden;
+  padding: 0 1em;
+  transition: 
+    color .2s ease,
+    border .2s ease;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.search-projects input {
+  background-color: transparent;
+  color: var(--oscuro-4);
+  flex: 1;
+  font-family: "Source Sans 3", sans-serif;
+  padding: .7em 0;
+}
+.search-projects input:hover,
+.search-projects input:focus {
+  outline: none;
+  border: none;
+}
+
+.search-projects:focus,
+.search-projects:hover,
+.search-projects:has(input:hover),
+.search-projects:has(input:focus) {
+  border: 1px solid rgba(168, 162, 158, .9);
+  color: var(--claro-1);
+}
+.search-projects:focus input,
+.search-projects:hover input {
+  color: var(--claro-1);
+}
+
+/** HERO **/
 
 .content-hero {
   background-color: var(--claro-1);
@@ -166,6 +211,8 @@ body {
 /** RESPONSIVE **/
 
 @media all and (min-width: 576px) {
+  /** HERO */
+
   .content-hero {
     flex-direction: row;
     height: 230px;
@@ -186,8 +233,16 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  /** HERO */
+
   .content-hero section {
     font-size: 1.1rem;
+  }
+
+  /** SECCIÓN DE BÚSQUEDA **/
+  
+  .search-projects {
+    width: 400px;
   }
 }
 
