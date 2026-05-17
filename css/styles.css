@@ -7,7 +7,9 @@
   --oscuro-3: #443F3B;   /* rgba(68, 63, 59, 1) */
   --oscuro-4: #A8A29E;   /* rgba(168, 162, 158, 1) */
   --claro-1: #FFFFFF;    /* rgba(255, 255, 255, 1) */
-  --naranja-1: #f86c07;  /* rgba(25, 21, 19, 1) */
+  --naranja-1: #ff8614;  /* rgba(25, 21, 19, 1) */
+  --naranja-2: #8b3c02;  /* rgba(139, 60, 2, 1) */
+  --naranja-3: #ffa734;  /* rgba(255, 167, 52, 1) */
 }
 
 /** General **/
