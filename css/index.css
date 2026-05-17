@@ -150,6 +150,81 @@ body {
   color: var(--claro-1);
 }
 
+/** SECCIONES DEL ABOUT **/
+
+.about-section {
+  margin-bottom: 1em;
+}
+
+.about-section-title {
+  display: flex;
+  align-items: start;
+  gap: .8em;
+}
+
+.about-section-title h2 {
+  border-bottom: 1px solid var(--oscuro-4);
+  color: var(--oscuro-4);
+  font-size: 1.2em;
+  /* line-height: 1; */
+  padding-bottom: .3em;
+}
+
+.about-section-title svg {
+  color: var(--oscuro-3);
+  width: 20px;
+}
+
+.about-section-body {
+  border-left: 1px solid var(--oscuro-3);
+  color: var(--oscuro-4);
+  margin-left: 10px;
+
+  /* (Svg icon title width - margin left) + About section title gap */
+  padding-left: calc((20px - 10px) + .8em);
+  padding-top: .8em;
+}
+
+/** SECCIÓN DE EXPERIENCIA **/
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  gap: .4em;
+  margin-bottom: .8em;
+}
+
+.experience-item-title {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+}
+
+.experience-item-title h3 {
+  color: var(--claro-1);
+}
+
+.experience-item-title p {
+  font-weight: 300;
+}
+
+.experience .about-section-body > p {
+  display: inline-block;
+  margin-top: .5em;
+}
+
+.experience .about-section-body > p a {
+  border-bottom: 1px solid var(--claro-1);
+  color: var(--claro-1);
+  transition: 
+    color .2s ease,
+    border .2s ease;
+}
+.experience .about-section-body > p a:hover {
+  border-bottom: 1px solid var(--oscuro-4);
+  color: var(--oscuro-4);
+}
+
 /** HERO **/
 
 .content-hero {
@@ -186,7 +261,7 @@ body {
 .content-hero section h2 {
   border-bottom: 1px solid var(--oscuro-1);
   color: var(--oscuro-1);
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 800;
   line-height: .85;
   width: 100%;
@@ -239,6 +314,13 @@ body {
 
   .content-hero-socials {
     width: 100%;
+  }
+
+  /** SECCIÓN DE EXPERIENCIA **/
+
+  .experience-item-title {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
