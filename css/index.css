@@ -243,8 +243,6 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  /** HERO */
-
   /** SECCIÓN DE BÚSQUEDA **/
   
   .search-projects {
@@ -280,6 +278,8 @@ body {
     flex-direction: column;
     width: 350px; 
     height: auto;
+    position: sticky;
+    top: 2em;
     text-align: center;
   }
 
