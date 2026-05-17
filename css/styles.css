@@ -40,6 +40,47 @@ ul {
   list-style-type: none;
 }
 
+/** Layout general **/
+
+body {
+  background-color: var(--oscuro-1);
+  color: var(--claro-1);
+}
+
+.layout {
+  display: flex;
+  min-width: 100vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 1.5em;
+
+  flex: 1;
+  padding: 1.2em .8em;
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+  
+  /** CONTENIDO PRINCIPAL **/
+
+  .content {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2em;
+  }
+}
+
 /** Fuentes **/
 .yeseva-one {
   font-family: "Yeseva One", serif;

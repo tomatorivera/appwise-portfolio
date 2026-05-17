@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+
+  <link rel="stylesheet" href="../css/project.css">
+
+  <!-- Dependencias -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <nav class="navbar">
+      <section class="navbar-head">
+        <i data-feather="briefcase"></i>
+        <h2>Portfolio</h2>
+    
+        <button id="toggle-navbar" class="navbar-openbtn">
+          <i data-feather="chevron-left"></i>
+        </button>
+      </section>
+    
+      <section class="navbar-links">
+        <ul>
+          <li>
+            <a href="../index.html" class="navbar-link navbar-link--active">
+              <i data-feather="user"></i>
+              Sobre mí
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-link open-dropdown">
+              <i data-feather="layout"></i>
+              Páginas web
+            </a>
+            <ul class="dropdown-menu" id="web-projects">
+              <li><a href="#" class="dropdown-item">Test 1</a></li>
+              <li><a href="#" class="dropdown-item">Test 2</a></li>
+              <li><a href="#" class="dropdown-item">Test 3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="navbar-link open-dropdown">
+              <i data-feather="crosshair"></i>
+              Videojuegos
+            </a>
+            <ul class="dropdown-menu" id="game-projects">
+              <li><a href="#" class="dropdown-item">Test 1</a></li>
+              <li><a href="#" class="dropdown-item">Test 2</a></li>
+              <li><a href="#" class="dropdown-item">Test 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <section class="content">
+      <div class="content-data">
+        
+      </div>
+    </section>
+  </div>
+
+  <!-- Dependencias -->
+  <script>feather.replace()</script>
+  <script src="../js/navbar.js"></script>
+
+</body>
+</html>

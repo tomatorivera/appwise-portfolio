@@ -1,29 +1,6 @@
 @import url(styles.css);
 @import url(navbar.css);
 
-body {
-  background-color: var(--oscuro-1);
-  color: var(--claro-1);
-  /* overflow-x: hidden; */
-}
-
-.layout {
-  display: flex;
-  min-width: 100vw;
-}
-
-/** CONTENIDO PRINCIPAL **/
-
-.content {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-start;
-  gap: 1.5em;
-
-  flex: 1;
-  padding: 1.2em .8em;
-}
-
 /** SECCIÓN DE INTRODUCCIÓN **/
 
 .introduction-data {
@@ -378,22 +355,7 @@ body {
 }
 
 @media all and (min-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .layout {
-    flex-direction: column;
-  }
-  
   /** CONTENIDO PRINCIPAL **/
-
-  .content {
-    flex-direction: row;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 2em;
-  }
 
   .content-data {
     flex: 1;

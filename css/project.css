@@ -1,0 +1,11 @@
+@import url(styles.css);
+@import url(navbar.css);
+
+@media all and (min-width: 1024px) {
+  /** CONTENIDO PRINCIPAL **/
+
+  .content-data {
+    flex: 1;
+  }
+
+}
