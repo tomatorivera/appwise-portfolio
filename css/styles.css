@@ -99,6 +99,7 @@ body {
 
 .badge {
   background-color: rgba(25, 21, 19, 1);
+  color: var(--oscuro-4);
   border: 1px solid var(--oscuro-3);
   border-radius: 15px;
   padding: .2em .8em;

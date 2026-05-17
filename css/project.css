@@ -1,11 +1,75 @@
 @import url(styles.css);
 @import url(navbar.css);
 
-@media all and (min-width: 1024px) {
-  /** CONTENIDO PRINCIPAL **/
+/** CONTENIDO PRINCIPAL **/
 
-  .content-data {
-    flex: 1;
-  }
+.content {
+  display: block;
+  width: 100%;
+}
 
+/** TITULO **/
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3em;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+
+  font-style: italic;
+  margin: 1em 0;
+}
+
+.project-title > svg {
+  color: var(--naranja-1);
+}
+
+.project-description {
+  color: var(--oscuro-4);
+}
+
+/** PROYECTOS **/
+
+.project {
+  background-color: var(--oscuro-2);
+  border: 1px solid var(--oscuro-3);
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.project iframe {
+  min-height: 700px;
+  width: 100%;
+}
+
+.project-link {
+  background-color: var(--naranja-1);
+
+  display: flex;
+  align-items: center;
+  gap: .5em;
+
+  margin-bottom: .8em;
+  padding: .8em;
+  transition: background-color .2s ease;
+  width: fit-content;
+}
+
+.project-link span {
+  color: var(--oscuro-1);
+}
+
+.project-link svg {
+  color: var(--oscuro-1);
+  height: 14px;
+  width: 16px;
+}
+
+.project-link:hover {
+  background-color: var(--naranja-2);
 }
