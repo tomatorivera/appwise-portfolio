@@ -159,6 +159,7 @@ body {
   gap: 1em;
   padding: 2em;
   width: 100%;
+  text-align: center;
 }
 
 .content-hero figure {
@@ -201,6 +202,8 @@ body {
 .content-hero-socials {
   display: flex;
   gap: 1em;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .content-hero-socials svg {
@@ -216,6 +219,7 @@ body {
   .content-hero {
     flex-direction: row;
     height: 230px;
+    text-align: start;
   }
 
   .content-hero section {
@@ -230,14 +234,14 @@ body {
     width: auto;
     height: 100%;
   }
+
+  .content-hero-socials {
+    width: 100%;
+  }
 }
 
 @media all and (min-width: 768px) {
   /** HERO */
-
-  .content-hero section {
-    font-size: 1.1rem;
-  }
 
   /** SECCIÓN DE BÚSQUEDA **/
   
@@ -292,7 +296,5 @@ body {
 
   .content-hero-socials {
     width: fit-content;
-    margin: 0 auto;
   }
-
 }
