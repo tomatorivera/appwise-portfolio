@@ -120,7 +120,6 @@ body {
     color .2s ease,
     border .2s ease;
   width: 100%;
-  /* background-color: red; */
 }
 
 .search-projects input {
@@ -129,6 +128,7 @@ body {
   flex: 1;
   font-family: "Source Sans 3", sans-serif;
   padding: .7em 0;
+  transition: color .2s ease;
 }
 .search-projects input:hover,
 .search-projects input:focus {
@@ -144,7 +144,9 @@ body {
   color: var(--claro-1);
 }
 .search-projects:focus input,
-.search-projects:hover input {
+.search-projects:hover input,
+.search-projects input:hover,
+.search-projects input:focus {
   color: var(--claro-1);
 }
 
