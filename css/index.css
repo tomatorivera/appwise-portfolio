@@ -21,7 +21,7 @@ body {
   gap: 1.5em;
 
   flex: 1;
-  padding: 1.2em 1.5em;
+  padding: 1.2em .8em;
 }
 
 /** SECCIÓN DE INTRODUCCIÓN **/
