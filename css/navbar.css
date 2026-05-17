@@ -40,7 +40,7 @@
   pointer-events: none;
 }
 
-.navbar.hide .navbar-head > button {
+.navbar.hide .navbar-openbtn {
   transform: translateX(100%) rotate(180deg);
 }
 
@@ -61,7 +61,7 @@
 }
 
 .navbar-openbtn {
-  background-color: var(--oscuro-2);
+  background: var(--oscuro-2);
   border-radius: 50%;
   cursor: pointer;
   padding: .3em;
@@ -180,4 +180,92 @@
 .dropdown-menu {
   margin-left: 1em;
   border-left: 1px solid var(--oscuro-3);
+}
+
+/** RESPONSIVE **/
+
+@media all and (min-width: 1200px) {
+  .navbar {
+    border-radius: 0;
+    flex-direction: row;
+    height: auto;
+
+    /* solución "xd" para no tener que agregar una etiqueta más al nav en html */ 
+    padding-inline: max(1em, calc((100vw - 1200px) / 2));
+
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .navbar.hide {
+    width: 100vw;
+  }
+
+  .navbar.hide .navbar-head h2,
+  .navbar.hide .navbar-links {
+    clip-path: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navbar.hide .navbar-openbtn {
+    display: none;
+    transform: none;
+  }
+
+  .navbar .navbar-openbtn {
+    display: none;
+  }
+
+  .navbar-links {
+    flex: 1;
+    margin-left: 1em;
+  }
+
+  .navbar-links > ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  .navbar-link {
+    padding-right: .5em;
+  }
+
+  .open-dropdown {
+    padding-right: 1.2em;
+  }
+
+  .open-dropdown::after {
+    right: 8px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    background-color: var(--oscuro-2);
+    border: none;
+    border-radius: .5em;
+
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+  }
+
+  .dropdown.dropdown-open .dropdown-menu {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+
+  .navbar-head h2,
+  .navbar-links {
+    clip-path: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
