@@ -4,8 +4,6 @@
 body {
   background-color: var(--oscuro-1);
   color: var(--claro-1);
-
-  /* temp */
   overflow-x: hidden;
 }
 
@@ -14,12 +12,40 @@ body {
   display: flex;
 }
 
+/** CONTENIDO PRINCIPAL **/
+
 .content {
+  display: flex;
+  flex-direction: column;
+
   flex: 1;
+  padding: 1.5em;
+}
+
+.content img {
+  /* temp */
+  width: 100%;
 }
 
 @media all and (min-width: 1200px) {
   .layout {
     flex-direction: column;
+  }
+  
+  /** CONTENIDO PRINCIPAL **/
+
+  .content {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2em 0;
+  }
+
+  .content-data {
+    flex: 1;
+  }
+
+  .content-hero {
+    width: 350px;
   }
 }

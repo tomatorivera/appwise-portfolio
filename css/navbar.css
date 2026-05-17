@@ -191,7 +191,7 @@
     height: auto;
 
     /* solución "xd" para no tener que agregar una etiqueta más al nav en html */ 
-    padding-inline: max(1em, calc((100vw - 1200px) / 2));
+    padding-inline: calc((100vw - 1200px) / 2);
 
     position: relative;
     width: 100vw;
