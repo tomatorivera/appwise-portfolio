@@ -73,3 +73,7 @@
 .project-link:hover {
   background-color: var(--naranja-2);
 }
+
+#project-deploy p {
+  color: var(--oscuro-4);
+}

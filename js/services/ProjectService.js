@@ -33,4 +33,22 @@ export class ProjectService {
       return [];
     }
   }
+
+  async getProjectById(id) {
+    try 
+    {
+      const projects = await this.projectsRepository.getAllProjects();
+      const projectMatch = projects.find(p => p.id == id);
+
+      if (!projectMatch)
+        throw new Error(`Projecto de ID: ${id} no encontrado`);
+
+      return new Project(projectMatch);
+    }
+    catch (error)
+    {
+      console.error(error);
+      return null;
+    }
+  }
 }
