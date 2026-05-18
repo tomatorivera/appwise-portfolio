@@ -40,3 +40,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('languages').innerHTML = languageItems;
   }
 });
+
+// Barra de búsqueda de proyectos
+const searchProjectsBar = document.getElementById('projects');
+const projectsFoundList = document.getElementById('projects-found');
+
+searchProjectsBar.addEventListener('input', () => {
+  const search = searchProjectsBar.value;
+  projectsFoundList.style.visibility = search.trim() ? "visible" : "hidden";
+});
