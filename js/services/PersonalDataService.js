@@ -1,4 +1,5 @@
 import { Experience } from "../models/Experience.js";
+import { SkillGroup } from "../models/SkillGroup.js";
 import { PersonalDataRepository } from "../repositories/PersonalDataRepository.js";
 
 export class PersonalDataService {
@@ -25,7 +26,7 @@ export class PersonalDataService {
     try
     {
       const personalData = await this.dataRepository.getAllData();
-      return personalData.hardSkills;
+      return personalData.hardSkills.map(obj => new SkillGroup(obj));
     }
     catch (error)
     {

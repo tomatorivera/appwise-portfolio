@@ -15,4 +15,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     experienceData.forEach(obj => experienceItems += obj.toHtml());
     document.getElementById('experience').innerHTML = experienceItems;
   }
+
+  // --- EXPERIENCIA --- //
+  const hardSkillsData = await dataService.getHardSkills();
+
+  if (hardSkillsData.length === 0)
+    document.getElementById('skills-msg').innerHTML = 'Ups! No se pudo obtener las skills, pero asumí que tengo muchas';
+  else
+  {
+    let skillsItems = ""; 
+    hardSkillsData.forEach(obj => skillsItems += obj.toHtml());
+    document.getElementById('skills').innerHTML = skillsItems;
+  }
 });
