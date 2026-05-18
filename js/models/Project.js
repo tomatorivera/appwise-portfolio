@@ -14,7 +14,7 @@ export class Project {
     return `
       <li>
         <a 
-          href="./html/project.html?id=${this.id}" 
+          href="/html/project.html?id=${this.id}" 
           class="dropdown-item"
         >
           ${this.name}
