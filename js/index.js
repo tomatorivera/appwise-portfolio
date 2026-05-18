@@ -55,7 +55,11 @@ searchProjectsBar.addEventListener('input', () => {
 
   if (search)
   {
-    const projectsFound = projects.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
+    const projectsFound = projects.filter(p => 
+      p.name.toLowerCase().includes(search.toLowerCase()) ||
+      p.technologies.some(str => str.toLowerCase().includes(search.toLowerCase()))
+    );
+
     projectsFoundList.innerHTML = (projectsFound.length != 0) 
       ? projectsFound.map(p => p.toNavbarItem()).join("")
       : "<li><a>No se encontraron coincidencias...</a></li>";
