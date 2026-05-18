@@ -5,8 +5,8 @@
     "description": "Proyecto de gestor de tareas (ToDo list) realizado para poner en práctica principalmente el uso del localStorage y el manejo de eventos. El usuario puede dar de alta tareas, marcarlas como completadas y eliminarlas, toda esta información persiste en su navegador.",
     "type": "web",
     "technologies": ["HTML", "CSS", "Javascript", "LocalStorage"],
-    "repositoryLink": "",
-    "deployLink": ""
+    "repositoryLink": "https://github.com/tomatorivera/appwise-todolist",
+    "deployLink": "https://tomatorivera.github.io/appwise-todolist/"
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "description": "En este proyecto se simula el carrito de compras en un e-commerce. Utilizamos FakeStore API para traer datos de productos, y mediante javascript seleccionamos dichos productos para comprar mientras el carrito se actualiza en tiempo real, dicha información persiste en el localStorage. Aproveché este proyecto también para practicar la modularización en javascript vanilla.",
     "type": "web",
     "technologies": ["HTML", "CSS", "Javascript", "JSON", "APIs"],
-    "repositoryLink": "",
-    "deployLink": ""
+    "repositoryLink": "https://github.com/tomatorivera/appwise-carritodecompras",
+    "deployLink": "https://tomatorivera.github.io/appwise-carritodecompras/"
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "description": "Diseñamos un dashboard administrativo completo y genérico adaptable para algún sistema de gestión, en el mismo practicamos maquetación de páginas web utilizando flexbox y grid.",
     "type": "web",
     "technologies": ["HTML", "CSS"],
-    "repositoryLink": "",
-    "deployLink": ""
+    "repositoryLink": "https://github.com/tomatorivera/appwise-admindashboard",
+    "deployLink": "https://tomatorivera.github.io/appwise-admindashboard/"
   },
   {
     "id": 4,
@@ -68,8 +68,8 @@
     "description": "Este videojuego simula la lógica del clásico videojuego de atrapa al topo. En el mismo, se utilizan funciones de tiempo para generar topos que aparecen en ubicaciones aleatorias del tablero, el jugador tiene un tiempo para golpearlos y si lo hace, aumenta el score. Además, el videojuego persiste el score más alto para que otro jugador pueda superarlo.",
     "type": "videojuego",
     "technologies": ["HTML", "CSS", "Javascript"],
-    "repositoryLink": "",
-    "deployLink": ""
+    "repositoryLink": "https://github.com/tomatorivera/appwise-whackamole",
+    "deployLink": "https://tomatorivera.github.io/appwise-whackamole/"
   },
   {
     "id": 9,
@@ -77,7 +77,7 @@
     "description": "Utilizamos la tecnología de Canvas con HTML y Javascript para simular el videojuego del Ping Pong. Ambas paletas pueden controlarse con distintas teclas, y enfrentar a dos jugadores en simultáneo.",
     "type": "videojuego",
     "technologies": ["HTML", "CSS", "Javascript", "Canvas"],
-    "repositoryLink": "",
-    "deployLink": ""
+    "repositoryLink": "https://github.com/tomatorivera/appwise-pingpong",
+    "deployLink": "https://tomatorivera.github.io/appwise-pingpong/"
   }
 ]
