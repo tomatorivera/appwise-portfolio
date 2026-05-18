@@ -1,3 +1,4 @@
+import { Experience } from "../models/Experience.js";
 import { PersonalDataRepository } from "../repositories/PersonalDataRepository.js";
 
 export class PersonalDataService {
@@ -11,7 +12,7 @@ export class PersonalDataService {
     try
     {
       const personalData = await this.dataRepository.getAllData();
-      return personalData.experience;
+      return personalData.experience.map(obj => new Experience(obj));
     }
     catch (error)
     {
