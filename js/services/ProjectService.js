@@ -2,7 +2,9 @@ import { ProjectRepository } from "../repositories/ProjectRepository.js";
 import { Project } from "../models/Project.js";
 
 export class ProjectService {
-  #PROJECTS_API_URL = '/data/projects.json';
+  #PROJECTS_API_URL = window.location.hostname.includes('github.io')
+    ? '/portfolio/data/projects.json'
+    : '/data/projects.json';
 
   constructor() {
     this.projectsRepository = new ProjectRepository(this.#PROJECTS_API_URL);
@@ -16,7 +18,7 @@ export class ProjectService {
     }
     catch (error)
     {
-      console.log(error);
+      console.error(error);
       return [];
     }
   }
@@ -29,7 +31,7 @@ export class ProjectService {
     }
     catch (error)
     {
-      console.log(error);
+      console.error(error);
       return [];
     }
   }
