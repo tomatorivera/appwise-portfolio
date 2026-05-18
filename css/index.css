@@ -297,6 +297,10 @@
 @media all and (min-width: 1024px) {
   /** CONTENIDO PRINCIPAL **/
 
+  .content {
+    gap: 5em;
+  }
+
   .content-data {
     flex: 1;
   }
