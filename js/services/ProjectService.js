@@ -3,7 +3,7 @@ import { Project } from "../models/Project.js";
 
 export class ProjectService {
   #PROJECTS_API_URL = window.location.hostname.includes('github.io')
-    ? '/portfolio/data/projects.json'
+    ? '/appwise-portfolio/data/projects.json'
     : '/data/projects.json';
 
   constructor() {
