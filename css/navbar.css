@@ -139,8 +139,10 @@
 }
 
 .dropdown-menu {
+  border-left: 1px solid var(--oscuro-3);
   display: flex;
   flex-direction: column;
+  margin-left: .6em;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -177,11 +179,6 @@
 .dropdown:has(.dropdown-item:hover) .open-dropdown::after {
   border-right: 2px solid var(--oscuro-2);
   border-bottom: 2px solid var(--oscuro-2);
-}
-
-.dropdown-menu {
-  margin-left: 1em;
-  border-left: 1px solid var(--oscuro-3);
 }
 
 /** RESPONSIVE **/
