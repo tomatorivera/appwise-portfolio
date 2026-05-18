@@ -34,7 +34,7 @@
 /** SECCIÓN DE BÚSQUEDA **/
 
 .search-projects {
-  background-color: rgba(168, 162, 158, .15);
+  background-color: rgba(168, 162, 158, .08);
   border: 1px solid rgba(168, 162, 158, .6);
   border-radius: 25px;
   color: var(--oscuro-4);
@@ -131,6 +131,10 @@
 
 .experience-item-title h3 {
   color: var(--claro-1);
+}
+
+.experience-item-title h3 span {
+  color: var(--oscuro-4);
 }
 
 .experience-item-title p {

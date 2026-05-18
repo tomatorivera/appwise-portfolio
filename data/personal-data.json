@@ -1,0 +1,38 @@
+{
+  "experience": [
+    {
+      "employeer": "U.N.T",
+      "jobName": "Teaching Assistant",
+      "jobDescription": "Docencia universitaria en materias relacionadas con back-end y front-end",
+      "startDate": "2024",
+      "endDate": "Actualidad"
+    },
+    {
+      "employeer": "Freelancer.es",
+      "jobName": "Desarrollador",
+      "jobDescription": "Diseño y desarrollo a medida de aplicaciones de software web y de escritorio",
+      "startDate": "2022",
+      "endDate": "Actualidad"
+    }
+  ],
+  "hardSkills": [
+    {
+      "area": "Backend",
+      "skills": [ "Java", "Java Swing", "JavaFX", "Spring", "Spring Boot", "Spring Security", "JPA", "Hibernate", "Thymeleaf", "C#", ".NET 8/9", "ADO.NET", "ASP.NET", "Blazor" ]
+    },
+    {
+      "area": "Frontend",
+      "skills": [ "HTML", "CSS", "Javascript", "Angular", "Bootstrap" ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Inglés",
+      "level": "B1"
+    },
+    {
+      "language": "Español",
+      "level": "Nativo"
+    }
+  ]
+}
