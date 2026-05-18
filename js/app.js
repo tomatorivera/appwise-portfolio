@@ -16,15 +16,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('experience').innerHTML = experienceItems;
   }
 
-  // --- EXPERIENCIA --- //
+  // --- HARD SKILLS --- //
   const hardSkillsData = await dataService.getHardSkills();
 
   if (hardSkillsData.length === 0)
-    document.getElementById('skills-msg').innerHTML = 'Ups! No se pudo obtener las skills, pero asumí que tengo muchas';
+    document.getElementById('skills-msg').innerHTML = 'Ups! No se pudieron obtener las skills, pero asumí que tengo muchas';
   else
   {
     let skillsItems = ""; 
     hardSkillsData.forEach(obj => skillsItems += obj.toHtml());
     document.getElementById('skills').innerHTML = skillsItems;
+  }
+
+  // --- LANGUAGE --- //
+  const languagesData = await dataService.getLanguages();
+
+  if (languagesData.length === 0)
+    document.getElementById('languages-msg').innerHTML = 'Ups! No se pudieron obtener los idiomas';
+  else
+  {
+    let languageItems = ""; 
+    languagesData.forEach(obj => languageItems += obj.toHtml());
+    document.getElementById('languages').innerHTML = languageItems;
   }
 });

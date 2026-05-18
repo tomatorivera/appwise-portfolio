@@ -1,4 +1,5 @@
 import { Experience } from "../models/Experience.js";
+import { Language } from "../models/Language.js";
 import { SkillGroup } from "../models/SkillGroup.js";
 import { PersonalDataRepository } from "../repositories/PersonalDataRepository.js";
 
@@ -39,7 +40,7 @@ export class PersonalDataService {
     try
     {
       const personalData = await this.dataRepository.getAllData();
-      return personalData.languages;
+      return personalData.languages.map(obj => new Language(obj));
     }
     catch (error)
     {
