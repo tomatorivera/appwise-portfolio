@@ -53,4 +53,17 @@ export class ProjectService {
       return null;
     }
   }
+
+  async getAllProjects() {
+    try
+    {
+      const projects = await this.projectsRepository.getAllProjects();
+      return projects.map(p => new Project(p));
+    }
+    catch (error)
+    {
+      console.error(error);
+      return [];
+    }
+  }
 }
