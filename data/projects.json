@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Gestor de tareas",
+    "description": "Proyecto de gestor de tareas (ToDo list) realizado para poner en práctica principalmente el uso del localStorage y el manejo de eventos. El usuario puede dar de alta tareas, marcarlas como completadas y eliminarlas, toda esta información persiste en su navegador.",
+    "type": "web",
+    "technologies": ["HTML", "CSS", "Javascript", "LocalStorage"],
+    "repositoryLink": "",
+    "deployLink": ""
+  },
+  {
+    "id": 2,
+    "name": "Carrito de compras",
+    "description": "En este proyecto se simula el carrito de compras en un e-commerce. Utilizamos FakeStore API para traer datos de productos, y mediante javascript seleccionamos dichos productos para comprar mientras el carrito se actualiza en tiempo real, dicha información persiste en el localStorage. Aproveché este proyecto también para practicar la modularización en javascript vanilla.",
+    "type": "web",
+    "technologies": ["HTML", "CSS", "Javascript", "JSON", "APIs"],
+    "repositoryLink": "",
+    "deployLink": ""
+  },
+  {
+    "id": 3,
+    "name": "Admin dashboard",
+    "description": "Diseñamos un dashboard administrativo completo y genérico adaptable para algún sistema de gestión, en el mismo practicamos maquetación de páginas web utilizando flexbox y grid.",
+    "type": "web",
+    "technologies": ["HTML", "CSS"],
+    "repositoryLink": "",
+    "deployLink": ""
+  },
+  {
+    "id": 4,
+    "name": "Clon de Spotify",
+    "description": "Diseñamos un clon de spotify aplicando lo practicado en maquetación utilizando flexbox y grid. Este diseño fue particularmente complejo por su cantidad de elementos, tuve que realizar un análisis previo del modelo dado antes de implementar todo en HTML y CSS.",
+    "type": "web",
+    "technologies": ["HTML", "CSS"],
+    "repositoryLink": "https://github.com/tomatorivera/appwise-proyectofinal-css",
+    "deployLink": "https://tomatorivera.github.io/appwise-proyectofinal-css/"
+  },
+  {
+    "id": 5,
+    "name": "Buscador de películas",
+    "description": "Utilizamos este proyecto como práctica de manipulación del DOM y del manejo de listas en javascript. Consiste en un buscador sencillo que filtra el input de un usuario y filtra las películas a partir de una lista predefinida, para luego mostrar las coincidencias por pantalla.",
+    "type": "web",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "repositoryLink": "https://github.com/tomatorivera/appwise-BuscadorPeliculas",
+    "deployLink": "https://tomatorivera.github.io/appwise-BuscadorPeliculas/"
+  },
+  {
+    "id": 6,
+    "name": "Clicker",
+    "description": "Este videojuego básico nos permitió practicar lógica mediante un simulador de autoclicker y funciones de tiempo, además, aplicando conocimientos anteriores como manipulación del DOM desde javascript y persistencia de datos en localStorage.",
+    "type": "videojuego",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "repositoryLink": "https://github.com/tomatorivera/appwise-Clicker",
+    "deployLink": "https://tomatorivera.github.io/appwise-Clicker/"
+  },
+  {
+    "id": 7,
+    "name": "Piedra Papel o Tijera",
+    "description": "Este videojuego simula la lógica del clásico videojuego de Piedra Papel o Tijera (también conocido como Juego del Gato) VS la PC. El juego compara las selecciones del usuario y la PC, decide un el resultado, divide el juego por rondas, y almacena el registro de las partidas.",
+    "type": "videojuego",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "repositoryLink": "https://github.com/tomatorivera/appwise-PiedraPapelTijera",
+    "deployLink": "https://tomatorivera.github.io/appwise-PiedraPapelTijera/"
+  },
+  {
+    "id": 8,
+    "name": "Whack A Mole",
+    "description": "Este videojuego simula la lógica del clásico videojuego de atrapa al topo. En el mismo, se utilizan funciones de tiempo para generar topos que aparecen en ubicaciones aleatorias del tablero, el jugador tiene un tiempo para golpearlos y si lo hace, aumenta el score. Además, el videojuego persiste el score más alto para que otro jugador pueda superarlo.",
+    "type": "videojuego",
+    "technologies": ["HTML", "CSS", "Javascript"],
+    "repositoryLink": "",
+    "deployLink": ""
+  },
+  {
+    "id": 9,
+    "name": "Ping Pong",
+    "description": "Utilizamos la tecnología de Canvas con HTML y Javascript para simular el videojuego del Ping Pong. Ambas paletas pueden controlarse con distintas teclas, y enfrentar a dos jugadores en simultáneo.",
+    "type": "videojuego",
+    "technologies": ["HTML", "CSS", "Javascript", "Canvas"],
+    "repositoryLink": "",
+    "deployLink": ""
+  }
+]
