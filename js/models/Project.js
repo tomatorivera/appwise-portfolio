@@ -11,10 +11,11 @@ export class Project {
   }
 
   toNavbarItem() {
+    const repoBaseUrl = window.location.hostname.includes('github.io') ? '/appwise-portfolio' : '';
     return `
       <li>
         <a 
-          href="/html/project.html?id=${this.id}" 
+          href="${repoBaseUrl}/html/project.html?id=${this.id}" 
           class="dropdown-item"
         >
           ${this.name}
