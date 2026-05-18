@@ -43,8 +43,9 @@
   align-items: center;
 
   margin: 1.5em 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 1em;
+  position: relative;
   transition: 
     color .2s ease,
     border .2s ease;
@@ -77,6 +78,31 @@
 .search-projects input:hover,
 .search-projects input:focus {
   color: var(--claro-1);
+}
+
+.search-projects ul {
+  background-color: var(--oscuro-2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 103%;
+  width: 90%;
+}
+
+.search-projects ul a {
+  color: var(--oscuro-4);
+  display: block;
+  padding: .5em .8em;
+  transition:
+    background-color .2s ease,
+    color .2s ease;
+}
+
+.search-projects ul a:hover {
+  color: var(--claro-1);
+  background-color: var(--oscuro-3);
 }
 
 /** SECCIONES DEL ABOUT **/

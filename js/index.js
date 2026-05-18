@@ -1,4 +1,5 @@
 import { PersonalDataService } from "./services/PersonalDataService.js";
+import { ProjectService } from "./services/ProjectService.js";
 
 // Cargar información cuando cargue la página
 document.addEventListener('DOMContentLoaded', async () => {
@@ -38,5 +39,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     let languageItems = ""; 
     languagesData.forEach(obj => languageItems += obj.toHtml());
     document.getElementById('languages').innerHTML = languageItems;
+  }
+});
+
+// Barra de búsqueda de proyectos
+const searchProjectsBar = document.getElementById('projects');
+const projectsFoundList = document.getElementById('projects-found');
+
+const projectsService = new ProjectService();
+const projects = await projectsService.getAllProjects();
+
+searchProjectsBar.addEventListener('input', () => {
+  const search = searchProjectsBar.value;
+  projectsFoundList.style.visibility = search.trim() ? "visible" : "hidden";
+
+  if (search)
+  {
+    const projectsFound = projects.filter(p => 
+      p.name.toLowerCase().includes(search.toLowerCase()) ||
+      p.technologies.some(str => str.toLowerCase().includes(search.toLowerCase()))
+    );
+
+    projectsFoundList.innerHTML = (projectsFound.length != 0) 
+      ? projectsFound.map(p => p.toNavbarItem()).join("")
+      : "<li><a>No se encontraron coincidencias...</a></li>";
   }
 });
